@@ -36,8 +36,8 @@
 <script>
 // 1) Устав сюди Project URL та anon/public key із Supabase → Project Settings → API.
 // Безпечний для браузера anon key можна публікувати лише разом із правильно налаштованими RLS-політиками.
-const SUPABASE_URL = 'ВСТАВТЕ_SUPABASE_PROJECT_URL';
-const SUPABASE_ANON_KEY = 'ВСТАВТЕ_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'https://dimbhajjsagpzghqdebk.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_LfT50puz-yUt77o7O1T5Iw_n7C8zstn';
 const CONFIGURED = SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('ВСТАВТЕ_') && !SUPABASE_ANON_KEY.includes('ВСТАВТЕ_');
 const fmt = n => new Intl.NumberFormat('uk-UA',{maximumFractionDigits:1}).format(Number(n)||0);
 const statusEl = document.getElementById('connection-status');
