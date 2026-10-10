@@ -68,9 +68,9 @@ function render(){
 }
 async function loadDonations(showStatus=true){
   if(!db) return;
-  const {data,error}=await db.from('donations').select('id,name,kg,created_at').order('created_at',{ascending:true});
+  const {data,error}=await db.from('donations').select('id,name,kilograms,created_at').order('created_at',{ascending:true});
   if(error){ if(showStatus) status('Не вдалося завантажити внески: '+error.message,true); return; }
-  donations=(data||[]).map(d=>({...d,kg:Number(d.kg)})); render();
+  donations=(data||[]).map(d=>({...d,kg:Number(d.kilograms)})); render();
   if(showStatus) status('Онлайн-база підключена. Внески оновлено.');
 }
 function setSignedIn(user){
@@ -102,17 +102,19 @@ document.getElementById('form').addEventListener('submit',async e=>{
   const name=document.getElementById('name').value.trim(), kg=Number(document.getElementById('weight').value);
   if(!name||!Number.isFinite(kg)||kg<=0)return;
   busy=true; const btn=e.submitter; if(btn)btn.disabled=true;
-  const {error}=await db.from('donations').insert({name,kg});
+  const {error}=await db.from('donations').insert({name,kilograms:kg});
   busy=false; if(btn)btn.disabled=false;
   if(error){status('Не вдалося додати внесок: '+error.message,true);return;}
   e.target.reset(); await loadDonations(false); status('Внесок успішно додано.');
 });
 document.getElementById('clear').addEventListener('click',async()=>{
-  if(!db||busy)return;
-  if(!confirm('Точно видалити всі записи? Цю дію не можна скасувати.'))return;
-  busy=true; const {error}=await db.from('donations').delete().gt('id',0); busy=false;
-  if(error){status('Не вдалося видалити записи: '+error.message,true);return;}
-  await loadDonations(false); status('Усі записи видалено.');
+ if(!confirm('Точно видалити всі записи? Цю дію не можна скасувати.'))return;
+busy=true;
+const {error}=await db.from('donations').delete().gt('id',0);
+busy=false;
+if(error){status('Не вдалося видалити записи: '+error.message,true);return;}
+await loadDonations(false);
+status('Усі записи видалено.');
 });
 if(!CONFIGURED) render();
 </script></body></html>
