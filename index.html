@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Дай паперу друге життя</title>
+<style>
+:root{--ink:#17251d;--muted:#657268;--green:#246b45;--lime:#c7f36b;--paper:#f6f5ee;--line:#e1e5da;--white:#fff}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:900px;margin:auto;padding:24px 18px 60px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0 34px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.04em;font-size:18px}.logo{width:42px;height:42px;background:var(--lime);border-radius:14px;display:grid;place-items:center;font-size:22px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--muted);font-size:12px;font-weight:700}.hero{background:var(--green);color:white;border-radius:28px;padding:clamp(24px,5vw,46px);position:relative;overflow:hidden}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:11px;font-weight:800;color:var(--lime)}h1{font-size:clamp(32px,6vw,56px);line-height:1.02;letter-spacing:-.055em;max-width:590px;margin:14px 0}.intro{color:#dbe8dd;max-width:500px;line-height:1.6;font-size:15px}.stats{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-top:36px}.amount{font-size:clamp(38px,8vw,64px);font-weight:850;letter-spacing:-.06em;line-height:1}.amount small{font-size:17px;letter-spacing:0;color:#dbe8dd;font-weight:600}.target{text-align:right;color:#dbe8dd;font-size:13px}.target strong{display:block;font-size:20px;color:white;margin-top:4px}.track{height:18px;background:#ffffff30;border-radius:999px;margin-top:20px;overflow:hidden}.fill{height:100%;width:0;background:var(--lime);border-radius:999px;transition:width .7s cubic-bezier(.2,.7,.2,1)}.ticks{display:flex;justify-content:space-between;color:#dbe8dd;font-size:11px;margin-top:9px}.below{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 34px}.mini{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}.mini .label{font-size:12px;color:var(--muted);font-weight:650}.mini .value{font-size:28px;font-weight:800;letter-spacing:-.04em;margin-top:7px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:14px}.section-head h2{margin:0;font-size:24px;letter-spacing:-.04em}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}.tablebox{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff}.table{width:100%;border-collapse:collapse}.table th{text-align:left;background:#eeefe7;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em;padding:14px 18px}.table td{padding:15px 18px;border-top:1px solid #edf0e8;font-size:14px}.table td:last-child,.table th:last-child{text-align:right}.person{font-weight:750}.sub{font-size:11px;color:var(--muted);margin-top:3px}.kg{font-weight:800;font-variant-numeric:tabular-nums}.empty{text-align:center;padding:34px 18px;color:var(--muted);font-size:14px}.admin{margin-top:30px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}.admin summary{font-weight:800;cursor:pointer}.admin p{color:var(--muted);font-size:13px;line-height:1.5}.fields{display:grid;grid-template-columns:1.4fr 1fr auto;gap:10px;margin-top:16px}input{width:100%;min-width:0;border:1px solid var(--line);border-radius:12px;padding:12px 13px;font:inherit;background:#fbfcf8;color:var(--ink)}button{border:0;border-radius:12px;padding:12px 16px;background:var(--green);color:#fff;font:inherit;font-weight:750;cursor:pointer;white-space:nowrap}button:hover{filter:brightness(1.1)}.danger{background:#f7e8e4;color:#8d3425;padding:7px 10px;font-size:12px}.adminrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.hint{font-size:11px;color:var(--muted);margin-top:10px}.foot{text-align:center;color:var(--muted);font-size:12px;margin-top:28px}@media(max-width:560px){.top{padding-bottom:22px}.pill{font-size:10px}.below{gap:10px}.mini{padding:16px}.fields{grid-template-columns:1fr 1fr}.fields input:first-child{grid-column:1/-1}.fields button{grid-column:1/-1}.table th,.table td{padding:13px 12px}.section-head h2{font-size:21px}}
+.impact{margin:18px 0 34px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px}.impact-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:16px}.impact-head h2{margin:6px 0 0;font-size:27px;letter-spacing:-.045em}.impact-head>p{max-width:390px;margin:0;color:var(--muted);font-size:13px;line-height:1.5}.eyebrow.dark{color:var(--green)}.impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.impact-card{border-radius:18px;padding:19px;display:flex;gap:14px;align-items:flex-start}.impact-card.army{background:#eef3ec}.impact-card.youth{background:#f4f5e9}.impact-icon{width:38px;height:38px;border-radius:12px;background:#fff;display:grid;place-items:center;flex:0 0 auto}.impact-title{font-weight:800;font-size:15px}.impact-card p{margin:7px 0 0;color:var(--muted);font-size:12px;line-height:1.5}@media(max-width:560px){.impact{padding:18px}.impact-head{display:block}.impact-head>p{margin-top:9px}.impact-grid{grid-template-columns:1fr}}.admin [hidden]{display:none!important}.admin button:disabled{opacity:.6;cursor:wait}
+</style>
+</head>
+<body><main class="wrap">
+<header class="top"><div class="brand"><div class="logo">↻</div><span>ДАЙ ПАПЕРУ<br>ДРУГЕ ЖИТТЯ</span></div><div class="pill">ЕКОІНІЦІАТИВА · БУРИНЬ</div></header>
+<section class="hero"><div class="eyebrow">Маленький внесок — спільний результат</div><h1>Папір не сміття.<br>Це ресурс.</h1><p class="intro">Збираємо макулатуру разом і даємо використаному паперу шанс стати чимось новим. Кожен кілограм наближає нас до мети.</p><div class="stats"><div><div class="amount" id="total">0 <small>кг</small></div><div style="color:#dbe8dd;font-size:12px;margin-top:7px">Уже зібрано</div></div><div class="target">Наша ціль<strong>10 000 кг</strong></div></div><div class="track" role="progressbar" aria-label="Прогрес збору макулатури" aria-valuemin="0" aria-valuemax="10000" aria-valuenow="0"><div class="fill" id="fill"></div></div><div class="ticks"><span>0 кг</span><span id="percent">0% цілі</span><span>10 000 кг</span></div></section>
+<section class="impact">
+  <div class="impact-head">
+    <div><div class="eyebrow dark">Куди підуть кошти</div><h2>Макулатура → допомога</h2></div>
+    <p>Зібраний папір здаємо на переробку, а отримані кошти спрямовуємо на дві цілі.</p>
+  </div>
+  <div class="impact-grid">
+    <div class="impact-card army"><div class="impact-icon">🛡️</div><div><div class="impact-title">50% — на підтримку армії</div><p>Кошти передаємо на потреби <strong>на потреби військовим з Буринщини</strong></p></div></div>
+    <div class="impact-card youth"><div class="impact-icon">✦</div><div><div class="impact-title">50% — на розвиток молодіжних ініціатив</div><p>Решта грошей допомагає втілювати в життя молодіжні проєкти та ініціативи, які розвивають нашу громаду</p></div></div>
+  </div>
+</section>
+<div class="below"><div class="mini"><div class="label">Усього учасників</div><div class="value" id="people">0</div></div><div class="mini"><div class="label">Залишилося до мети</div><div class="value" id="left">10 000 кг</div></div></div>
+<section><div class="section-head"><div><h2>Хто долучився</h2><p>Кожен внесок має значення. Ми неймовірно вдячні вам:</p></div><div class="pill" id="count">0 внесків</div></div><div class="tablebox"><table class="table"><thead><tr><th>Учасник</th><th>Внесок</th></tr></thead><tbody id="rows"></tbody></table><div class="empty" id="empty">Поки що внесків немає. Будь першим, хто долучиться!</div></div></section>
+<details class="admin"><summary>Панель організатора</summary>
+<p>Увійди, щоб додавати внески. Записи зберігаються в спільній онлайн-базі та відображаються всім відвідувачам.</p>
+<div id="connection-status" class="hint" role="status">Підключення до бази даних…</div>
+<form id="login-form"><div class="fields"><input id="email" type="email" autocomplete="username" placeholder="Email адміністратора" required><input id="password" type="password" autocomplete="current-password" placeholder="Пароль" required><button type="submit">Увійти</button></div></form>
+<div id="admin-tools" hidden><div class="hint" id="signed-in"></div>
+<form id="form"><div class="fields"><input id="name" placeholder="Ім’я або назва учасника" maxlength="100" required><input id="weight" type="number" min="0.1" max="100000" step="0.1" placeholder="Кілограми" required><button type="submit">＋ Додати</button></div></form>
+<div class="adminrow"><button type="button" class="danger" id="clear">Очистити всі записи</button><button type="button" id="logout">Вийти</button></div></div>
+<div class="hint">Якщо ви не адміністратор, просто закрийте цю панель. Реєстрація на сайті вимкнена.</div></details>
+<footer class="foot">Разом перетворюємо папір на нові можливості ♻</footer></main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+// 1) Устав сюди Project URL та anon/public key із Supabase → Project Settings → API.
+// Безпечний для браузера anon key можна публікувати лише разом із правильно налаштованими RLS-політиками.
+const SUPABASE_URL = 'ВСТАВТЕ_SUPABASE_PROJECT_URL';
+const SUPABASE_ANON_KEY = 'ВСТАВТЕ_SUPABASE_ANON_KEY';
+const CONFIGURED = SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('ВСТАВТЕ_') && !SUPABASE_ANON_KEY.includes('ВСТАВТЕ_');
+const fmt = n => new Intl.NumberFormat('uk-UA',{maximumFractionDigits:1}).format(Number(n)||0);
+const statusEl = document.getElementById('connection-status');
+const loginForm = document.getElementById('login-form');
+const adminTools = document.getElementById('admin-tools');
+let donations = [];
+let db = null;
+let busy = false;
+
+function status(message, isError=false){ statusEl.textContent=message; statusEl.style.color=isError?'#8d3425':''; }
+function render(){
+  const total=donations.reduce((s,d)=>s+Number(d.kg),0), pct=Math.min(100,total/10000*100);
+  document.getElementById('total').innerHTML=fmt(total)+' <small>кг</small>';
+  document.getElementById('fill').style.width=pct+'%';
+  document.querySelector('.track').setAttribute('aria-valuenow',Math.min(total,10000));
+  document.getElementById('percent').textContent=fmt(pct)+'% цілі';
+  document.getElementById('people').textContent=donations.length;
+  document.getElementById('left').textContent=fmt(Math.max(0,10000-total))+' кг';
+  document.getElementById('count').textContent=donations.length+' '+(donations.length===1?'внесок':donations.length>=2&&donations.length<=4?'внески':'внесків');
+  const rows=document.getElementById('rows'); rows.replaceChildren();
+  donations.forEach(d=>{
+    const tr=document.createElement('tr'),td1=document.createElement('td'),td2=document.createElement('td'),person=document.createElement('div'),sub=document.createElement('div');
+    person.className='person'; person.textContent=d.name;
+    sub.className='sub'; sub.textContent=new Date(d.created_at).toLocaleDateString('uk-UA');
+    td1.append(person,sub); td2.className='kg'; td2.textContent=fmt(d.kg)+' кг'; tr.append(td1,td2); rows.prepend(tr);
+  });
+  document.getElementById('empty').style.display=donations.length?'none':'block';
+}
+async function loadDonations(showStatus=true){
+  if(!db) return;
+  const {data,error}=await db.from('donations').select('id,name,kg,created_at').order('created_at',{ascending:true});
+  if(error){ if(showStatus) status('Не вдалося завантажити внески: '+error.message,true); return; }
+  donations=(data||[]).map(d=>({...d,kg:Number(d.kg)})); render();
+  if(showStatus) status('Онлайн-база підключена. Внески оновлено.');
+}
+function setSignedIn(user){
+  const signed=Boolean(user);
+  loginForm.hidden=signed; adminTools.hidden=!signed;
+  document.getElementById('signed-in').textContent=signed?'Вхід виконано: '+user.email:'';
+}
+if(!CONFIGURED){
+  status('Потрібно підключити Supabase: заповни SUPABASE_URL і SUPABASE_ANON_KEY у коді.',true);
+  document.getElementById('total').innerHTML='0 <small>кг</small>'; render();
+}else{
+  db=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);
+  status('Підключення до онлайн-бази…');
+  loadDonations();
+  db.auth.getSession().then(({data})=>setSignedIn(data.session?.user||null));
+  db.auth.onAuthStateChange((_event,session)=>setSignedIn(session?.user||null));
+  // Періодично оновлюємо публічну таблицю, щоб зміни бачили інші відвідувачі.
+  setInterval(()=>loadDonations(false),20000);
+}
+loginForm.addEventListener('submit',async e=>{
+  e.preventDefault(); if(!db) return status('Спочатку налаштуй підключення до Supabase.',true);
+  const email=document.getElementById('email').value.trim(), password=document.getElementById('password').value;
+  const {error}=await db.auth.signInWithPassword({email,password});
+  if(error) status('Не вдалося увійти. Перевір email і пароль.',true); else {status('Вхід виконано.'); document.getElementById('password').value='';}
+});
+document.getElementById('logout').addEventListener('click',async()=>{if(db){const {error}=await db.auth.signOut();if(error)status('Помилка виходу: '+error.message,true);else status('Ти вийшов з адмін-панелі.');}});
+document.getElementById('form').addEventListener('submit',async e=>{
+  e.preventDefault(); if(!db||busy)return;
+  const name=document.getElementById('name').value.trim(), kg=Number(document.getElementById('weight').value);
+  if(!name||!Number.isFinite(kg)||kg<=0)return;
+  busy=true; const btn=e.submitter; if(btn)btn.disabled=true;
+  const {error}=await db.from('donations').insert({name,kg});
+  busy=false; if(btn)btn.disabled=false;
+  if(error){status('Не вдалося додати внесок: '+error.message,true);return;}
+  e.target.reset(); await loadDonations(false); status('Внесок успішно додано.');
+});
+document.getElementById('clear').addEventListener('click',async()=>{
+  if(!db||busy)return;
+  if(!confirm('Точно видалити всі записи? Цю дію не можна скасувати.'))return;
+  busy=true; const {error}=await db.from('donations').delete().gt('id',0); busy=false;
+  if(error){status('Не вдалося видалити записи: '+error.message,true);return;}
+  await loadDonations(false); status('Усі записи видалено.');
+});
+if(!CONFIGURED) render();
+</script></body></html>
